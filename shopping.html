@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="shopping.html">Shopping</a></li>
+            </ul>
+        </nav>
+
+        <div id="main">
+            <h1>Shopping</h1>
+            <div>
+                <input type="checkbox" name="important" id="important">
+                <label for="important">Is important</label><br>
+                <input type="checkbox" name="buyable" id="buyable">
+                <label for="buyable">Can be bougth in groceries</label><br>
+                <label for="item">Item to buy</label>
+                <input type="text" name="item" id="item">
+                <input type="button" value="add" onclick="addItem()">
+            </div>
+            <p>
+                Shopping list:
+                <ul id="shopping-list">
+
+                </ul>
+            </p>
+
+            <div>
+                <label for="itemIndex">Remove item :</label> 
+                <input type="number" name="itemIndex" id="itemIndex">
+                <input type="button" value="Remove" onclick="removeItem()">
+            </div>
+        </div>
+        <script src="dynforms.js"></script>
+    </body> 
+</html>
